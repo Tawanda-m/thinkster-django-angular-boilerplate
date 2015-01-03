@@ -13,6 +13,7 @@
 * `$ pip install -r requirements.txt`
 * `$ npm install -g bower`
 * `$ npm install`
+*  $ ln -s /usr/bin/nodejs /usr/bin/node
 * `$ bower install`
 * `$ python manage.py migrate`
 * `$ python manage.py runserver`
