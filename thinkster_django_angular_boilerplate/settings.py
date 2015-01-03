@@ -61,9 +61,14 @@ WSGI_APPLICATION = 'thinkster_django_angular_boilerplate.wsgi.application'
 import dj_database_url
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default='sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'thinkster',
+        'USER': 'test1',
+        'PASSWORD': 'test1',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
 }
 
 # Internationalization
